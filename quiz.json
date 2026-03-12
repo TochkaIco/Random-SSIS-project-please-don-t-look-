@@ -1,1 +1,46 @@
-{"name": "skibi", "question": "bruh", "answers": "haha:haha2:buh"}{"name": "hello", "question": "boboboobbubuubub", "answers": "pro:oef:h"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "qq"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "hello", "question": "boboboobbubuubub", "answers": "qq"}{"name": "hello", "question": "boboboobbubuubub", "answers": "q"}{"name": "idiot quiz 123", "question": "hi", "answers": "hello:jfejfeiieujuj"}{"name": "idiot quiz 123", "question": "hi", "answers": "q"}
+[
+    {
+        "name": "Python Essentials",
+        "questions": [
+            {
+                "question": "What data type represents a sequence of characters enclosed in quotes?",
+                "answers": [
+                    "string",
+                    "str"
+                ]
+            },
+            {
+                "question": "Which collection type is ordered, changeable, and allows duplicate members, defined with square brackets?",
+                "answers": [
+                    "list"
+                ]
+            },
+            {
+                "question": "What symbol is used to start a single-line comment in Python?",
+                "answers": [
+                    "#",
+                    "hash"
+                ]
+            },
+            {
+                "question": "What logical operator returns true only if both expressions being compared are true?",
+                "answers": [
+                    "and",
+                    "&"
+                ]
+            },
+            {
+                "question": "If you want to import only a specific function from a module, which keyword must precede the module name?",
+                "answers": [
+                    "from"
+                ]
+            },
+            {
+                "question": "Which keyword is used to provide an alias for a module (e.g., import math as m)?",
+                "answers": [
+                    "as"
+                ]
+            }
+        ]
+    }
+]
