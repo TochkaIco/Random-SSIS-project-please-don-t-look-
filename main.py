@@ -185,7 +185,7 @@ def play_quiz(): # Play already created quizzes
     console.clear()
     table = Table(title="Select a Quiz")
     quiz_id = 1
-    for quiz_id, question in quizzes: # Shows a table of all available quizzes
+    for question in quizzes: # Shows a table of all available quizzes
         table.add_row(str(quiz_id), question["name"])
         quiz_id += 1
     console.print(table)
