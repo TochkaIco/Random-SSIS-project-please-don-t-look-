@@ -85,9 +85,8 @@ def manage_quizzes(): # Edit / Rename / Delete
         table.add_column("Quiz Name", style="white")
         table.add_column("Questions", justify="right", style="green")
 
-        quiz_id = 1
-        for q in quizzes:
-            table.add_row(str(quiz_id), q["name"], str(len(q["questions"])))
+        for q_id, q in enumerate(quizzes):
+            table.add_row(str(q_id+1), q["name"], str(len(q["questions"])))
 
         console.print(table)
         console.print("\n[bold]ID[/bold]: Edit | [bold]d <ID>[/bold]: Delete | [bold]b[/bold]: Back")
@@ -97,10 +96,10 @@ def manage_quizzes(): # Edit / Rename / Delete
             break
         elif cmd.startswith('d '):
             try:
-                idx = int(cmd.split(' ')[1]) - 1
-                if 0 <= idx < len(quizzes):
-                    if Confirm.ask(f"Delete '[red]{quizzes[idx]['name']}[/red]'?"):
-                        quizzes.pop(idx)
+                input_delete_id = int(cmd.split(' ')[1]) - 1
+                if 0 <= input_delete_id < len(quizzes):
+                    if Confirm.ask(f"Delete '[red]{quizzes[input_delete_id]['name']}[/red]'?"):
+                        quizzes.pop(input_delete_id)
                         save_quizzes(quizzes)
                 else:
                     console.print("[red]Invalid ID[/red]")
@@ -204,9 +203,8 @@ def play_quiz(): # Play already created quizzes
         console.clear()
         console.print(Panel(f"[bold yellow]Playing: {selected['name']}[/bold yellow]"))
 
-        quiz_id = 1
-        for q in selected["questions"]:
-            console.print(f"\n[bold]Question {quiz_id}:[/bold] {q['question']}")
+        for q_id, q in enumerate(selected["questions"]):
+            console.print(f"\n[bold]Question {q_id+1}:[/bold] {q['question']}")
             answer = Prompt.ask("Answer").strip().lower()
             if answer in [a.lower() for a in q["answers"]]:
                 console.print("[green]Correct![/green]")
